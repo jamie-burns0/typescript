@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "2024Q1-java-library"
+		}
+	],
+	"settings": {
+		"java.project.explorer.showNonJavaResources": true,
+		"java.dependency.packagePresentation": "flat"
+	}
+}
