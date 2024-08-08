@@ -85,7 +85,7 @@ test('characterFrequencyMapToPalindrome 1', () => {
 });
 
 
-test('makePalindromeFrom 1', () => {
+test('palindrome candidate will return a palindrome', () => {
     expect(makePalindromeFrom('a')).toBe('a');
     expect(makePalindromeFrom('aa')).toBe('aa');
     expect(makePalindromeFrom('aaa')).toBe('aaa');
@@ -94,5 +94,23 @@ test('makePalindromeFrom 1', () => {
     expect(makePalindromeFrom('aabbb')).toBe('abbba');
     expect(makePalindromeFrom('aabbbcccc')).toBe('abccbccba');
     expect(makePalindromeFrom('aaabbbbcc')).toBe('abbcacbba');
+    expect(makePalindromeFrom(null)).toBeUndefined();
+    expect(makePalindromeFrom('')).toBeUndefined();
+    expect(makePalindromeFrom('ab')).toBeUndefined();
+    expect(makePalindromeFrom('abc')).toBeUndefined();
+    expect(makePalindromeFrom('aab2')).toBeUndefined();
+    expect(makePalindromeFrom('123')).toBeUndefined();
+    expect(makePalindromeFrom('..--')).toBeUndefined();
+});
+
+
+test('non-palindrome candidate will return undefined', () => {
+    expect(makePalindromeFrom(null)).toBeUndefined();
+    expect(makePalindromeFrom('')).toBeUndefined();
+    expect(makePalindromeFrom('ab')).toBeUndefined();
+    expect(makePalindromeFrom('abc')).toBeUndefined();
+    expect(makePalindromeFrom('aab2')).toBeUndefined();
+    expect(makePalindromeFrom('123')).toBeUndefined();
+    expect(makePalindromeFrom('..--')).toBeUndefined();
 });
 

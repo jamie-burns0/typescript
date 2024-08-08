@@ -57,7 +57,7 @@ function characterFrequencyMapToPalindrome( map: Map<string,number> ): string {
     return palindrome.join('');
 }
 
-function makePalindromeFrom( data: string ): string | undefined {
+function makePalindromeFrom( data: string | null ): string | undefined {
 
     if( stringIsNotAPalindromeCandidate(data) ) {
         return undefined;
