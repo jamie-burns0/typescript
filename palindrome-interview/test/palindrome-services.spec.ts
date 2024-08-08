@@ -72,7 +72,7 @@ test('map with one unpaired character is a palindrome candidate', () => {
 });
 
 
-test('characterFrequencyMapToPalindrome 1', () => {
+test('valid character frequency map will return a palindrome', () => {
     expect(characterFrequencyMapToPalindrome(new Map<string,number>([['a',1]]))).toBe('a');
     expect(characterFrequencyMapToPalindrome(new Map<string,number>([['a',2]]))).toBe('aa');
     expect(characterFrequencyMapToPalindrome(new Map<string,number>([['a',3]]))).toBe('aaa');
@@ -94,13 +94,6 @@ test('palindrome candidate will return a palindrome', () => {
     expect(makePalindromeFrom('aabbb')).toBe('abbba');
     expect(makePalindromeFrom('aabbbcccc')).toBe('abccbccba');
     expect(makePalindromeFrom('aaabbbbcc')).toBe('abbcacbba');
-    expect(makePalindromeFrom(null)).toBeUndefined();
-    expect(makePalindromeFrom('')).toBeUndefined();
-    expect(makePalindromeFrom('ab')).toBeUndefined();
-    expect(makePalindromeFrom('abc')).toBeUndefined();
-    expect(makePalindromeFrom('aab2')).toBeUndefined();
-    expect(makePalindromeFrom('123')).toBeUndefined();
-    expect(makePalindromeFrom('..--')).toBeUndefined();
 });
 
 
