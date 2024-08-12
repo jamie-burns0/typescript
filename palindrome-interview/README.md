@@ -7,7 +7,10 @@ vm.sh"  # This loads nvm
 ```
 ```
 nvm install --lts
+nvm install 22
 ```
+if Jest reports an error when launching VSCode, run 'nvm install 22' and relaunch VSCode
+
 - https://www.typescriptlang.org/docs/handbook/intro.html
 
 - https://www.npmjs.com/package/typescript
